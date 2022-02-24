@@ -1,13 +1,15 @@
 <?php
-    if(empty($_GET["text"]))
-        exit("Error - empty input");
-    $text = $_GET["text"];
+    if(empty($_GET['text']))
+        exit('Error - empty input');
+    $text = $_GET['text'];
 
-    preg_match("/^[a-zA-Z][a-zA-Z0-9]+/", $text, $matches);
+    preg_match('/^[a-zA-Z][a-zA-Z0-9]+/', $text, $matches);
     $length = strlen($matches[0]);
     $different = strlen($text) - $length;
+
     if($different > 0)
-        exit("Error - char in " . $length . " position not english bet or digit");
+        exit('Error - char in ' . $length . ' position not english bet or digit');
+
     $allSymbol = array();
     $security = 0;
     $digits = 0; //Цифры
@@ -39,9 +41,10 @@
     $security += 4 * $digits;
     $security += 2 * ($length - $uppercase);
     $security += 2 * ($length - $lowercase);
+
     if($bets == $length)
         $security -= $length;
     if($digits == $length)
         $security -= $length;
     $security -= $countRepeatSymbol;
-    echo("Security = " . $security);
+    echo('Security = ' . $security);

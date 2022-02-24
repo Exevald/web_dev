@@ -1,10 +1,6 @@
 <?php
 
-    const DATA_PATH = "../email.txt";
-
-    if(empty($_GET["text"]))
-        exit("Error - empty input");
-
+    const DATA_PATH = "email.txt";
     $text = $_GET["text"];
 
     $fields_to_bind = [
@@ -25,8 +21,12 @@
             exit();
 
     foreach ($fields_to_bind as $field)
-        if(isset($_GET[$field])) $dataset[$field] = $_GET[$field];
+        if(isset($_GET[$field]))
+            $dataset[$field] = $_GET[$field];
 
-    file_put_contents(DATA_PATH, json_encode($dataset));
+    file_put_contents(
+        DATA_PATH,
+        json_encode($dataset)
+    );
 
     echo('ok');
