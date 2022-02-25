@@ -13,10 +13,10 @@
 
     $allSymbol = array();
     $security = 0;
-    $digits = 0; //Цифры
+    $digits = 0;
     $uppercase = 0;
     $lowercase = 0;
-    $bets = 0; //Буквы
+    $bets = 0;
     $countRepeatSymbol = 0;
 
     for($i = 0; $i < $length; $i++)
