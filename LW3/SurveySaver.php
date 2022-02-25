@@ -26,7 +26,7 @@
 
     file_put_contents(
         DATA_PATH,
-        json_encode($dataset)
+        json_encode($dataset),
     );
 
     echo('ok');
