@@ -4,6 +4,7 @@
     $text = $_GET['text'];
 
     preg_match('/^[a-zA-Z][a-zA-Z0-9]+/', $text, $matches);
+
     $length = strlen($matches[0]);
     $different = strlen($text) - $length;
 
@@ -37,6 +38,7 @@
             $allSymbol[] = $char;
 
     }
+
     $security += 4 * $length;
     $security += 4 * $digits;
     $security += 2 * ($length - $uppercase);
@@ -47,4 +49,5 @@
     if($digits == $length)
         $security -= $length;
     $security -= $countRepeatSymbol;
+
     echo('Security = ' . $security);
