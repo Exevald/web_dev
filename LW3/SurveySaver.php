@@ -20,8 +20,5 @@
             $dataset[$field] = $fields_to_bind[$i] . ": " . $_GET[$field] . "\n";
         $i++;
     }
-    file_put_contents(
-        DATA_PATH,
-        $dataset,
-    );
+    file_put_contents(DATA_PATH, $dataset);
     echo('Response generated');
