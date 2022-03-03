@@ -1,5 +1,5 @@
 <?php
     header("Content-Type: text/plain");
     $text = $_GET["text"];
-    $text = preg_replace('/\s+/', ' ', $text); //Заменяется непрерывная строка пробелов на 1 пробел
+    $text = preg_replace('/\s+/', ' ', $text);
     echo trim($text);
