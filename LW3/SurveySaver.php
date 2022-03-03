@@ -1,6 +1,6 @@
 <?php
 
-    const DATA_PATH = "email.txt";
+    const DATA_PATH = "answer.txt";
     $text = $_GET["text"];
 
     $fields_to_bind = [
@@ -26,7 +26,6 @@
 
     file_put_contents(
         DATA_PATH,
-        json_encode($dataset),
+        implode("\n", $dataset),
     );
-
-    echo('ok');
+    echo('Response generated');
