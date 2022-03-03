@@ -1,4 +1,5 @@
 <?php
+    header("Content-Type: text/plain");
     if(empty($_GET['text']))
         exit('Error - empty input');
     $text = $_GET['text'];
