@@ -1,5 +1,13 @@
 <?php
     header("Content-Type: text/plain");
-    $file = fopen('info.txt', 'r+');
-    $response = file_get_contents('info.txt', true);
-    echo($response);
+    const DATA_PATH = 'email.txt';
+    $text = $_GET["text"];
+    $fields_to_bind = [
+        'first_name',
+        'last_name',
+        'email',
+        'age',
+    ];
+    $required_fields = ['email'];
+    $dataset = [];
+
