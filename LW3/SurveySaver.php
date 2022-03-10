@@ -16,9 +16,9 @@
             exit('Error of input');
     $i = 0;
     foreach ($fields_to_bind as $field) {
-        if (isset($_GET[$field]))
+        if ((isset($_GET[$field]) && (is_writable(DATA_PATH))))
             $dataset[$field] = $fields_to_bind[$i] . ": " . $_GET[$field] . "\n";
         $i++;
     }
-    file_put_contents(DATA_PATH, $dataset);
+    file_put_contents(data/DATA_PATH, $dataset);
     echo('Response generated');
