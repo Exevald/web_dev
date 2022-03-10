@@ -50,5 +50,4 @@
     if($digits == $length)
         $security -= $length;
     $security -= $countRepeatSymbol;
-
     echo('Security = ' . $security);
