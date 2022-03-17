@@ -46,39 +46,35 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 100px;
     line-height: 122.35%;
+    letter-spacing: -0.8px;
     color: #000000;
 }
 .main-title-sub {
     color: #EE58B6;
 }
 .info {
-
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    /*font-size: 26px;*/
+    font-size: 1.623em;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .subtitle-main {
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 120%;
-    color: rgba(0, 0, 0, 0.7);
-    margin-top: -3vw;
+    margin-top: -3.05vw;
 }
 .subtitle-sub {
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 120%;
-    color: rgba(0, 0, 0, 0.7);
-    margin-top: 1vw;
+    margin-top: -1.8vw;
 }
 .small-button {
-    width: 332px;
-    height: 55px;
+    width: 21.6vw;
+    height: 3.6vw;
     background: #05090C;
-    border-radius: 4.59px;
+    border-radius: 0.25vw;
     border-width: 0;
+    margin-top: 1.35vw;
 }
