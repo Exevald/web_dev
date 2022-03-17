@@ -11,14 +11,15 @@
     $required_fields = ['email'];
     $dataset = [];
 
-    foreach ($required_fields as $value)
+    /*foreach ($required_fields as $value)
         if(empty($_GET[$value]))
-            exit('Error of input');
+            exit('Error of input. In request must be an email');
     $i = 0;
     foreach ($fields_to_bind as $field) {
         if ((isset($_GET[$field]) && (is_writable(DATA_PATH))))
             $dataset[$field] = $fields_to_bind[$i] . ": " . $_GET[$field] . "\n";
         $i++;
     }
-    file_put_contents(data/DATA_PATH, $dataset);
+    file_put_contents(DATA_PATH, $dataset);
     echo('Response generated');
+    */

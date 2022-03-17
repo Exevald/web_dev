@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin-left: 6.1vw;
+}
+
+.logo-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    color: #000000;
+}
+.logo-title-sub {
+    color: #EE58B6;
+}
+.subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.big-button {
+    width: 247px;
+    height: 55px;
+    background: #05090C;
+    border-radius: 4.59px;
+    border-width: 0;
+}
+.text-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.main-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122.35%;
+    color: #000000;
+}
+.main-title-sub {
+    color: #EE58B6;
+}
+.subtitle-main {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
+}
+.small-button {
+    width: 332px;
+    height: 55px;
+    background: #05090C;
+    border-radius: 4.59px;
+    border-width: 0;
+}
