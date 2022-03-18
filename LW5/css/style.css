@@ -10,7 +10,7 @@ body {
 }
 
 .logo-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30.8354px;
@@ -23,13 +23,13 @@ body {
 }
 .subtitle {
     margin-top: 2.4vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
 }
-.big-button {
+.small-button {
     margin-top: 1vw;
     width: 247px;
     height: 55px;
@@ -38,7 +38,7 @@ body {
     border-width: 0;
 }
 .text-button {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -47,7 +47,7 @@ body {
 }
 .main-title {
     margin-top: 2vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 100px;
@@ -59,7 +59,7 @@ body {
     color: #EE58B6;
 }
 .info {
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
     /*font-size: 26px;*/
@@ -69,30 +69,53 @@ body {
 }
 
 .subtitle-main {
-    margin-top: -3.05vw;
+    margin-top: -50px
 }
 .subtitle-sub {
-    margin-top: -1.8vw;
+    margin-top: -25px;
 }
-.small-button {
-    width: 21.6vw;
-    height: 3.6vw;
+.big-button {
+    width: 332px;
+    height: 55px;
     background: #05090C;
     border-radius: 0.25vw;
     border-width: 0;
-    margin-top: 1.35vw;
+    margin-top: 21px;
 }
 .tagline {
     width: 100%;
-    height: 25.9vw;
+    height: 400px;
     background: #000000;
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
-.time-info {
-    background: green;
-    width: 15.5vw;
-    height: 10vw;
-    margin-left: 20vw;
+.tagline-time {
+    margin-left: 20.5vw;
+    margin-top: 13px;
 }
 .time-image {
-    margin-top: 150px;
+    margin-top: 113px;
+    margin-left: 5.8vw;
+}
+.tagline-text {
+    margin-top: 0.75vw;
+}
+.tagline-notebook {
+    margin-left: 41.25vw;
+    margin-top: -8.1vw;
+}
+.notebook-image {
+    margin-left: 7.2vw;
+}
+.tagline-target {
+    margin-left: 64.7vw;
+    margin-top: -8.45vw;
+}
+.target-image {
+    margin-top: 0.3vw;
+    margin-left: 5.75vw;
 }
