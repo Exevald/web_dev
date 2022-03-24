@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 body {
     margin: 0;
@@ -83,9 +84,6 @@ body {
     margin-top: 21px;
 }
 .tagline {
-    width: 100%;
-    height: 400px;
-    background: #000000;
     font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
@@ -93,29 +91,29 @@ body {
     line-height: 120%;
     color: #FFFFFF;
 }
+.tagline-section {
+    background-color: black;
+    width: 350px;
+}
 .tagline-time {
-    margin-left: 20.5vw;
-    margin-top: 13px;
-}
-.time-image {
-    margin-top: 113px;
-    margin-left: 5.8vw;
-}
-.tagline-text {
-    margin-top: 0.75vw;
+    margin-top: 110px;
+    margin-left: 7.35vw;
 }
 .tagline-notebook {
-    margin-left: 41.25vw;
-    margin-top: -8.1vw;
-}
-.notebook-image {
-    margin-left: 7.2vw;
+    margin-top: 108px;
+    margin-left: 9vw;
 }
 .tagline-target {
-    margin-left: 64.7vw;
-    margin-top: -8.45vw;
+    margin-top: 115px;
+    margin-left: 7.35vw;
 }
-.target-image {
-    margin-top: 0.3vw;
-    margin-left: 5.75vw;
+.tagline-text {
+    margin-top: 0.8vw;
+}
+.sec-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 126.06%;
 }
