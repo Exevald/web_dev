@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    margin: 0;
+}
+
+/*.main-info {*/
+/*    margin-left: 6.1vw;*/
+/*}*/
+
+.logo-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    color: #000000;
+    letter-spacing: -0.045em;
+}
+.sec-color-title {
+    color: #EE58B6;
+}
+.subtitle {
+    margin-top: 2.4vw;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.small-button {
+    margin-top: 1vw;
+    width: 247px;
+    height: 55px;
+    background: #05090C;
+    border-radius: 4.59px;
+    border-width: 0;
+}
+.text-button {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.main-title {
+    margin-top: 2vw;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122.35%;
+    letter-spacing: -0.8px;
+    color: #000000;
+}
+.main-title-sub {
+    color: #EE58B6;
+}
+.info {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    /*font-size: 26px;*/
+    font-size: 1.623em;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.subtitle-main {
+    margin-top: -50px
+}
+.subtitle-sub {
+    margin-top: -25px;
+}
+.big-button {
+    width: 332px;
+    height: 55px;
+    background: #05090C;
+    border-radius: 0.25vw;
+    border-width: 0;
+    margin-top: 21px;
+}
+.tagline {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.tagline-section {
+    background-color: black;
+    width: 350px;
+}
+.tagline-time {
+    margin-top: 110px;
+    margin-left: 7.35vw;
+}
+.tagline-notebook {
+    margin-top: 108px;
+    margin-left: 9vw;
+}
+.tagline-target {
+    margin-top: 115px;
+    margin-left: 7.35vw;
+}
+.tagline-text {
+    margin-top: 0.8vw;
+}
+.sec-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 126.06%;
+}
+.sec-subtitle {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    margin-top: -1vw;
+}
+.third-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+}
+.you-can {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.you-can-section {
+    width: 358px;
+    height: 190px;
+    background: #000000;
+    border-radius: 7.35723px;
+
+}
+.you-can-image {
+    margin: 32.36px 281.49px 109.64px 39.35px;
+}
+.you-can-text {
+    color: white;
+    margin: -101.23px 48.98px 37.27px 39.25px;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    height: 108px;
+}
+.footer-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    color: #FFFFFF;
+    letter-spacing: -0.045em;
+}
