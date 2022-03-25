@@ -150,6 +150,20 @@ body {
     margin: 32.36px 281.49px 109.64px 39.35px;
 }
 .you-can-text {
+    color: white;
+    margin: -101.23px 48.98px 37.27px 39.25px;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    height: 108px;
+}
+.footer-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
     color: #FFFFFF;
-    margin: 101.23px 48.98px 37.27px 39.25px;
+    letter-spacing: -0.045em;
 }
