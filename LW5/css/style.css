@@ -6,9 +6,9 @@ body {
     margin: 0;
 }
 
-.main-info {
-    margin-left: 6.1vw;
-}
+/*.main-info {*/
+/*    margin-left: 6.1vw;*/
+/*}*/
 
 .logo-title {
     font-family: 'Montserrat', serif;
@@ -19,7 +19,7 @@ body {
     color: #000000;
     letter-spacing: -0.045em;
 }
-.logo-title-sub {
+.sec-color-title {
     color: #EE58B6;
 }
 .subtitle {
@@ -116,4 +116,40 @@ body {
     font-weight: 500;
     font-size: 48px;
     line-height: 126.06%;
+}
+.sec-subtitle {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    margin-top: -1vw;
+}
+.third-title {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+}
+.you-can {
+    font-family: 'Roboto Condensed', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.you-can-section {
+    width: 358px;
+    height: 190px;
+    background: #000000;
+    border-radius: 7.35723px;
+
+}
+.you-can-image {
+    margin: 32.36px 281.49px 109.64px 39.35px;
+}
+.you-can-text {
+    color: #FFFFFF;
+    margin: 101.23px 48.98px 37.27px 39.25px;
 }
