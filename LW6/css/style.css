@@ -65,6 +65,7 @@
 }
 .info-wrap {
     display: flex;
+    justify-content: space-between;
 }
 .main-title {
     margin-top: 10.4vw;
@@ -88,11 +89,13 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-.subtitle-main {
-    margin-top: -50px
+.subtitle-info {
+    /*margin-top: -50px*/
+    margin-top: 275px;
+    margin-left: -556px;
 }
-.subtitle-sub {
-    margin-top: -25px;
+.image-main-info {
+    /*margin-left: 200px;*/
 }
 .big-button {
     width: 265.6px;
