@@ -106,7 +106,6 @@ body {
 }
 .tagline {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
     font-family: 'Roboto Condensed', serif;
     font-style: normal;
@@ -115,34 +114,41 @@ body {
     line-height: 120%;
     background-color: black;
     width: 100%;
-    height: 318.4px;
+    height: 318px;
     margin-top: -2.9vw;
     color: #FFFFFF;
 }
-.tagline-section {
+.tagline-background {
+    display: flex;
     /*justify-content: center;*/
-    /*margin-right: 25vw;*/
-    /*background-color: black;*/
-    /*flex-direction: initial;*/
-    margin-top: -1.4vw;
-    /*margin-right: 3vw;*/
-    margin-left: 1vw;
-    /*width: 350px;*/
+    max-width: 911px;
+    justify-content: space-between;
+    margin-left: 311.5px;
+    flex-grow: 1;
+    margin-top: 135px;
+}
+.tagline-section {
+    /*align-items: center;*/
+    /*margin-left: -10px;*/
+    margin-top: -3.5vw;
 }
 .tagline-time {
-    margin-top: 110px;
-    margin-left: 7.35vw;
+    margin-left: 6vw;
+    margin-top: 0.5vw;
 }
 .tagline-notebook {
-    margin-top: 108px;
-    margin-left: 9vw;
+    margin-left: 7.15vw;
+    margin-top: 0.5vw;
 }
 .tagline-target {
-    margin-top: 115px;
-    margin-left: 7.35vw;
+    margin-left: 5.6vw;
+    margin-top: 0.5vw;
 }
 .tagline-text {
-    margin-top: 0.8vw;
+    margin-top: 0.65vw;
+}
+.you-cant-catch {
+
 }
 .sec-title {
     font-family: 'Montserrat', serif;
