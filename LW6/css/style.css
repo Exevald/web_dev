@@ -232,15 +232,19 @@ body {
 }
 .footer {
     width: 100%;
+    height: 86px;
     background-color: black;
-    height: 108px;
+    margin-top: 13.9vw;
 }
 .footer-title {
+    padding-top: 1.65vw;
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30.8354px;
+    font-size: 24.6684px;
     line-height: 122.33%;
     color: #FFFFFF;
     letter-spacing: -0.045em;
+    margin-left: 46.2%;
+    /*margin-top: 1vw;*/
 }
