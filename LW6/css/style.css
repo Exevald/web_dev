@@ -2,100 +2,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-.header {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1344px;
+body {
+    margin: 0;
 }
 
+.header {
+    display: flex;
+    margin: 8px auto 0 auto;
+    max-width: 1344px;
+}
 .logo-title {
-    margin-top: 1.5vw;
-    font-family: 'Montserrat';
+    margin-top: 1.4vw;
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24.6684px;
+    font-size: 25px;
     line-height: 122.33%;
     /* identical to box height, or 30px */
     letter-spacing: -0.045em;
     /*margin-left: -5.4vw;*/
     /*margin-top: 1.5vw;*/
-    margin-left: 0.5vw;
+    margin-left: 0.48vw;
 }
 .sec-color-title {
     color: #EE58B6;
 }
 .subtitle {
     display: flex;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12.8px;
     line-height: 16px;
     /*margin-top: 1.2vw;*/
-    margin: 1.2vw auto;
+    margin: 1.2vw 0 1.2vw auto;
     /*max-width: 377px;*/
 }
-.sub-one {
-    /*margin-left: auto;*/
-    /*max-width: 377px;*/
-    /*margin-left: 23.35vw;*/
-}
-.sub-two {
-    /*padding-right: 5vw;*/
-}
-.sub-three {
+.sub-text {
+    margin-right: 5.01vw;
+    margin-left: -0.47vw;
 }
 .small-button {
-    margin-top: 1.05vw;
-    width: 197.6px;
+    margin-top: 1vw;
+    width: 198px;
     height: 44px;
-    /*left: 1433px;*/
     background: #05090C;
-    border-radius: 4.59px;
+    border-radius: 4px;
     border-width: 0;
-    margin-right: -0.5vw;
+    margin-right: -0.54vw;
 }
 .text-button {
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 12.8px;
+    font-size: 13px;
     line-height: 13px;
     color: #FFFFFF;
 }
 .info-wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+}
+.section-info {
+    margin-left: 9.3vw;
 }
 .main-title {
     margin-top: 10.4vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 80px;
     line-height: 122.35%;
     color: #000000;
-    margin-left: 8.7vw;
+    /*margin-left: 8.7vw;*/
 }
 .main-title-sub {
     color: #EE58B6;
 }
 .info {
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20.8px;
     line-height: 120%;
     color: rgba(0, 0, 0, 0.7);
+    /*margin-left: 8.7vw;*/
+    margin-top: -2.4vw;
 }
 
-.subtitle-info {
-    /*margin-top: -50px*/
-    margin-top: 275px;
-    margin-left: -556px;
-}
-.image-main-info {
-    /*margin-left: 200px;*/
+.right-info {
+    flex-grow: 1;
+    margin-left: 1.7vw;
+    margin-top: -2.5vw;
 }
 .big-button {
     width: 265.6px;
@@ -103,19 +101,30 @@
     background: #05090C;
     border-radius: 0.25vw;
     border-width: 0;
-    margin-top: 21px;
+    margin-top: 1vw;
+    /*margin-left: 8.73vw;*/
 }
 .tagline {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 17.6px;
     line-height: 120%;
+    background-color: black;
+    width: 100%;
+    height: 318.4px;
+    margin-top: -2.9vw;
     color: #FFFFFF;
 }
 .tagline-section {
-    background-color: black;
-    width: 350px;
+    /*justify-content: center;*/
+    /*margin-right: 25vw;*/
+    /*background-color: black;*/
+    margin-top: -1.4vw;
+    /*width: 350px;*/
 }
 .tagline-time {
     margin-top: 110px;
