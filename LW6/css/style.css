@@ -148,22 +148,39 @@ body {
     margin-top: 0.65vw;
 }
 .you-cant-catch {
-
+    display: flex;
+    flex-direction: row;
+    /*flex-grow: 1;*/
+}
+.left-wrap {
+    flex-grow: 1;
+    margin-left: 19vw;
+    margin-top: 3.8vw;
+}
+.right-wrap {
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 13.5vw;
+    margin-left: -17vw;
 }
 .sec-title {
     font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 38.4px;
     line-height: 126.06%;
 }
 .sec-subtitle {
     font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14.4px;
     line-height: 135%;
-    margin-top: -1vw;
+    margin-top: -0.8vw;
+}
+.deadline-again {
+    display: flex;
+    justify-content: center;
 }
 .third-title {
     font-family: 'Montserrat', serif;
