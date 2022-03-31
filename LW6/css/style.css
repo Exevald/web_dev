@@ -203,6 +203,10 @@ body {
     margin-top: 4.8vw;
 }
 .you-can {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
@@ -210,18 +214,20 @@ body {
     line-height: 17px;
 }
 .you-can-section {
-    width: 286.4px;
+    max-width: 286.4px;
     height: 152px;
     background: #000000;
     border-radius: 5.88579px;
-
-}
+    margin-top: 1vw;
+    margin-right: 24px;
+    /*margin-left: 5vw;*/
+}   
 .you-can-image {
     margin: 25.89px 225.19px 16.69px 31.48px;
 }
 .you-can-text {
     color: white;
-    margin: -16.69px 39.18px 29.81px 31.4px;
+    margin: -5px 39.18px 29.81px 31.4px;
 }
 .footer {
     width: 100%;
