@@ -1,22 +1,23 @@
 <?php
     header("Content-Type: text/html");
     $text = $_GET["text"];
-    $filename = 'data/' . $_GET['email'] . '.txt';
     $fields_to_bind = ['first_name', 'last_name', 'email', 'age',];
     $required_fields = ['email'];
     $dataset = [];
-    fopen($filename, 'r+');
-
     foreach ($required_fields as $value)
         if(empty($_GET[$value]))
-            exit('Error of input. In request must be an email');
+            exit("Error of input. In request must be an email");
+    $filename = "data/" . $_GET['email'] . ".txt";
+    $fp = fopen($filename, 'r+');
+    fopen($filename, 'w+');
     $i = 0;
+    $name = 'name.txt';
     foreach ($fields_to_bind as $field) {
-        if ((isset($_GET[$field])) && (!strpos(file_get_contents($filename), $fields_to_bind[$i]))) {
-            $dataset[$field] = $fields_to_bind[$i] . ": " . $_GET[$field] . "\n";
-            echo($dataset[$field] . ' ');
+        if ((isset($_GET[$field])) && (!strpos($fp, $fields_to_bind[$i] . ": " . $_GET[$field]))) {
+            $dataset[$field] = $fields_to_bind[$i] . ": " . $_GET[$field] . PHP_EOL;
+            fwrite($fp, $dataset[$field]);
         }
-        file_put_contents($filename, $dataset);
+        echo($dataset[$field] . ' ');
         $i++;
     }
-    echo('Response generated');
+    echo("Response generated");
