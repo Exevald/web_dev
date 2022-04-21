@@ -5,7 +5,6 @@
     else {
         $filename = "data/" . $_POST["email"] . ".txt";
         $fp = fopen($filename, "r+");
-
         if ($fp)
             while (($buffer = fgets($fp, 4096)) !== false) {
                 echo($buffer . "<br>");

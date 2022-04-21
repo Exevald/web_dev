@@ -5,9 +5,8 @@
     $email = $_GET["email"];
     $fields_to_get = ["first_name", "last_name", "email", "age"];
     $fields_to_post = ["Имя", "Фамилия", "Email", "Возраст"];
-    foreach ($required_fields as $value)
-        if(empty($_GET[$value]))
-            exit("Error of input. In request must be an email");
+    if(empty($email))
+        exit("Введите email!");
     $filename = "data/" . $email . ".txt";
     if (file_exists($filename))
         $fp = fopen($filename, "r+");
@@ -21,4 +20,4 @@
             fgets($fp, 4096);
     }
     fclose($fp);
-    echo("Response generated");
+    echo("Файл создан!");
