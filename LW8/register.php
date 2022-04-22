@@ -20,3 +20,4 @@
         case  "marketer":
             fwrite($fp, "Маркетолог");
     }
+    fclose($fp);
