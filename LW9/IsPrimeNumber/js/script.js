@@ -32,6 +32,6 @@ function IsPrimeNumber(input) {
             break;
         }
         default:
-            alert("not number of object");
+            alert("not number of massive");
     }
 }
