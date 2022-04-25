@@ -1,4 +1,4 @@
 Имя: Ivan
 Фамилия: Ivanov
 Email: ivan.ivanov@gmail.com
-Возраст:
+Возраст: 26
