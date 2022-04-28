@@ -19,8 +19,7 @@ body {
     margin: 30px auto 43px auto;
     display: flex;
     justify-content: space-between;
-
-    max-width: 1680px;
+    max-width: 65vw;
     padding: 0 30px 0 30px;
     flex-wrap: wrap
 
@@ -35,7 +34,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap
+    /*flex-wrap: wrap*/
 }
 
 .upper-frame-stripe-sec__questions {
@@ -174,7 +173,7 @@ body {
     border-radius: 10px;
     color: #05090C;
     background: #05090C;
-
+    cursor: pointer;
     width: 332px;
     height: 55px;
 }
@@ -194,7 +193,7 @@ body {
     background: black;
     margin: 50px 0 0 0;
     padding: 30px 0 30px 0;
-    min-height: 35vh;
+    min-height: 25vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -256,11 +255,9 @@ body {
     text-align: center
 }
 
-/**/
 .sidebar_frame {
     margin: 72px auto 0 auto;
     max-width: 1135px;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -278,14 +275,13 @@ body {
 
 .sidebar_mind-blow {
     margin: 0;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse
 }
 
 .sidebar_left_img {
-    margin: 0;
+    margin: 0 auto;
     max-width: 538px;
     width: 100%
 }
@@ -295,9 +291,7 @@ body {
 }
 
 .sidebar_right_img {
-    margin: 5% 153px 0 82px;
     max-width: 378px;
-    width: 100%
 }
 
 .sidebar-right__image {
@@ -441,17 +435,22 @@ body {
     color: white
 }
 
+@media screen and (max-width: 1128px) {
+    .sidebar_right_img {
+        margin-top: 17vh;
+    }
+}
+
 
 @media screen and (max-width: 907px) {
     .upper_frame_stripe {
-        margin: 30px 0 20px 0;
+        width: 100%;
+        display: flex;
+
     }
 
     .upper-frame-stripe-sec__questions {
-        flex-direction: column;
-        padding: 0;
-        width: auto;
-        margin: 0 auto 0 0
+        
     }
 
     .upper_frame_stripe_button_text {
@@ -467,7 +466,7 @@ body {
     }
 
     .upper_frame_stripe_sec {
-        margin-right: 0;
+        /*margin-right: 0;*/
     }
 
     .upper_frame_button {
@@ -552,8 +551,8 @@ body {
     }
 
     .sidebar_right_img {
-        width: 80%;
-        margin: 0
+        width: 100%;
+        margin-top: 8vh;
     }
 }
 
@@ -571,7 +570,11 @@ body {
     }
 
     .sidebar_mind-blow_main {
-        margin: 20px
+        margin-top: 0;
+    }
+    .sidebar_right_img {
+        width: 100%;
+        /*margin-top: 25vh;*/
     }
 }
 
@@ -580,9 +583,9 @@ body {
         margin: 9px auto 0 auto;
     }
 
-    .upper_frame_stripe_sec {
-        margin: 0 auto 0 auto
-    }
+    /*.upper_frame_stripe_sec {*/
+    /*    margin: 0 150px 0 150px*/
+    /*}*/
 }
 
 @media screen and (max-width: 1569px) {
@@ -592,5 +595,39 @@ body {
 
     .upper-frame__image {
         width: 95%
+    }
+}
+
+@media screen and (max-width: 1303px) {
+    .upper_frame_stripe_sec {
+        width: 100%;
+        display: flex;
+        margin-right: 500px;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 610px) {
+    .sidebar_right_img {
+        width: 100%;
+        margin-top: 25vh;
+    }
+}
+@media screen and (max-width: 907px) {
+    .upper-frame-stripe-sec__questions {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 538px) {
+    .upper_frame_stripe_sec {
+        margin-top: 15px;
+    }
+    .upper-frame-stripe-sec__questions {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-right: 10px;
     }
 }
