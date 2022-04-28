@@ -34,5 +34,4 @@ function IsPrimeNumber(input) {
         default:
             alert("not number of massive");
     }
-    console.log("Ubuntu!");
 }
