@@ -33,7 +33,6 @@ function createPopup() {
     popup.innerHTML =
         `<div class="form-wrap">
         <img class="image-welcome" src="images/welcome.png" alt="welcome">
-        <img class="image-exit" src="images/form-exit.png" alt="exit">
         <h2 class="form-text">Записаться на курс</h2>
         <form class="form-section" action="register.php" method="POST">
             <label>
