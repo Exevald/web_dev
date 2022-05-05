@@ -1,7 +1,10 @@
 .form-wrap {
-    max-width: 400px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    max-width: 640px;
+    height: 847px;
 }
 
 .form-text {
@@ -12,7 +15,6 @@
     font-weight: 500;
     font-size: 20.8px;
     line-height: 120%;
-    /* identical to box height, or 25px */
 }
 
 .input-wrap {
@@ -26,18 +28,12 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 16px;
-    display: flex;
-    justify-content: center;
 }
 
 .input-wrap:hover {
     background: #F1F1F1;
 }
 
-.form-section {
-    display: flex;
-    flex-direction: column;
-}
 
 .select-wrap {
     display: block;
@@ -45,7 +41,6 @@
 }
 
 .checkbox-block-wrap {
-    display: flex;
     margin: 28px 0;
 }
 
@@ -54,13 +49,7 @@
     height: 1em;
     border: 1px solid #adb5bd;
     border-radius: 0.25em;
-
-    /*background-repeat: no-repeat;*/
 }
-
-/*.subscribe-block:checked+label::before {*/
-/*    background-color: #EE58B6;*/
-/*}*/
 
 .checkbox-text {
     font-family: 'Roboto Condensed', serif;
@@ -68,7 +57,6 @@
     font-weight: 400;
     font-size: 12.8px;
     line-height: 18px;
-    /*position: relative;*/
 }
 
 .submit-block {
@@ -80,11 +68,7 @@
     width: 384px;
     height: 51.2px;
     border-radius: 5.39553px;
-    display: flex;
-    justify-content: center;
     background-color: black;
     color: white;
     text-align: center;
-    /*margin-left: -5vw;*/
-
 }

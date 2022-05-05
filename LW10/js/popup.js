@@ -1,14 +1,15 @@
 window.onload = main;
 
 function main() {
-    const upper_btn = document.getElementsByClassName('upper_frame_button')[0];
-    const main_btn = document.getElementsByClassName('upper_frame_main_button')[0];
-    upper_btn.addEventListener('click', onBtnClick);
-    main_btn.addEventListener('click', onBtnClick);
+    const upperBtn = document.getElementsByClassName('upper_frame_button')[0];
+    const mainBtn = document.getElementsByClassName('upper_frame_main_button')[0];
+    upperBtn.addEventListener('click', onBtnClick);
+    mainBtn.addEventListener('click', onBtnClick);
 
     let overlayDiv = document.createElement('div');
     overlayDiv.classList.add('overlay');
     overlayDiv.appendChild(createPopup());
+
     overlayDiv.addEventListener('click', onPopupClose);
 
     window.addEventListener('scroll', onWindowScroll);
@@ -17,7 +18,7 @@ function main() {
         document.body.appendChild(overlayDiv)
     }
 
-    function onWindowScroll() {
+    function onWindowScroll(event) {
         overlayDiv.style.top = window.scrollY + 'px';
     }
 
