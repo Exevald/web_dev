@@ -6,6 +6,9 @@
     max-width: 640px;
     height: 847px;
 }
+.image-exit {
+    margin-top: 15vh;
+}
 
 .form-text {
     margin-left: 1.5vw;
