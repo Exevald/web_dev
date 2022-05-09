@@ -9,15 +9,14 @@
 
 .form-crossbar {
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
+    display: flex; justify-content: flex-end;
     max-width: 600px;
     width: 100%;
 }
 .form-crossbar__image {
-    max-width: 16px;
-    width: 100%;
     margin-top: 3vh;
+    max-width: 16px;
+    width: 100%
 }
 .form-text {
     margin-left: 1.5vw;
