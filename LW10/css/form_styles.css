@@ -6,6 +6,19 @@
     max-width: 640px;
     height: 847px;
 }
+
+.form-crossbar {
+    margin: 0;
+
+    display: flex; justify-content: flex-end;
+    max-width: 600px;
+    width: 100%;
+}
+.form-crossbar__image {
+    margin-top: 2vh;
+    max-width: 16px;
+    width: 100%
+}
 .form-text {
     margin-left: 1.5vw;
     margin-top: 0;

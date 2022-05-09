@@ -41,6 +41,9 @@ function main() {
         popUp.classList.add('popUp');
         popUp.innerHTML =
         `<div class="form-wrap">
+            <div class="form-crossbar">
+                <img src="images/form-exit.png" alt="exit" class="form-crossbar__image"/>
+            </div>
             <img class="image-welcome" src="images/welcome.png" alt="welcome">
             <h2 class="form-text">Записаться на курс</h2>
             <form class="form-section" action="register.php" method="POST">
