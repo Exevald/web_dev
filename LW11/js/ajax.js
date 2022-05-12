@@ -6,7 +6,7 @@ const sendFormBtn = document.getElementById('send-btn');
 const email = document.getElementById('ajax-form_email');
 const name = document.getElementById('ajax-form_name');
 
-sendFormBtn.addEventListener('click', sendForm);
+sendFormBtn.addEventListener("click", sendForm);
 
 async function sendForm() {
     if (checkEmail()) {
