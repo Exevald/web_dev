@@ -1,6 +1,6 @@
-window.onload = main
+window.onload = popUp
 
-function main() {
+function popUp() {
     let animationDelay = 1;
     let upButton = document.getElementsByClassName('upper_frame_button')[0]
     let mainButton = document.getElementsByClassName('upper_frame_main_button')[0]
@@ -46,7 +46,7 @@ function main() {
             </div>
             <img class="image-welcome" src="images/welcome.png" alt="welcome">
             <h2 class="form-text">Записаться на курс</h2>
-            <form class="form-section" action="../php/action_ajax_form.php" method="POST">
+            <form class="form-section" method="POST">
                 <label>
                     <input class="input-wrap" type="text" name="name" placeholder="Ваше имя"/>
                 </label>
