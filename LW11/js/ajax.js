@@ -1,117 +1,67 @@
-window.onload = popUp
+window.onload = main;
 
 debugger
 
-const sendFormBtn = document.getElementById('send-btn');
-const email = document.getElementById('ajax-form_email');
-const name = document.getElementById('ajax-form_name');
+function main() {
 
-sendFormBtn.addEventListener("click", sendForm);
+    function popUp() {
+        let animationDelay = 1;
+        let upButton = document.getElementsByClassName('upper_frame_button')[0]
+        let mainButton = document.getElementsByClassName('upper_frame_main_button')[0]
 
-async function sendForm() {
-    if (checkEmail()) {
-        // 1. - Чтобы имя состояло только из буквенных символов, иначе подсвечивается красным после нажатия на кнопку
-        // 2. + Email проверялся на валидность, в случае невалидности подсвечивается красным после нажатия на кнопку
-        // 3. + Если поле пустое, то поле подсвечивается красным, как в дизайне.
+        let popUp = document.createElement('div')
+        let overlay = document.createElement('div')
+        let blackout = document.createElement('div');
+        blackout.classList.add('blackout');
 
-        let data = JSON.stringify({
-            name: document.getElementById('ajax-form_name').value,
-            email: document.getElementById('ajax-form_email').value
+        upButton.addEventListener('click', onButtonClick)
+        mainButton.addEventListener('click', onButtonClick)
+        blackout.addEventListener('click', popupClose)
+        window.addEventListener('scroll', onWindowScroll)
+        overlay.classList.add('overlay')
+        overlay.appendChild(blackout)
+        overlay.appendChild(createPopup())
+
+
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Escape')
+                popupClose()
         });
 
-        const response = await fetch('../php/form_handle.php', {
-            method: 'POST', //мы отправляем данные на сервер, значит POST
-            body: data, // отправляем ранее созданный json объект data
-            headers: {
-                'Content-Type': 'application/json' //отправляем заголовки запроса
-            }
-        });
+        function onButtonClick() {
+            document.body.appendChild(overlay)
+            setTimeout(() => {
+                popUp.classList.add('popUpShow')
+                blackout.classList.add('blackoutShow')
+            }, animationDelay)
+            const cross = document.getElementsByClassName('form-crossbar__image')[0];
+            cross.addEventListener('click', popupClose)
 
-        if (response.ok) {
-            // если HTTP-статус в диапазоне 200-299
-            alert('4. В случае успешного результата попап с формой должен закрыться. ');
-        } else if (response.status === 500) {
-            // иначе, что-то пошло не так, говорим об этом пользователю.
-            alert('В случае 500 ошибки все элементы попапа удаляются и появляется сообщение: Упс… Произошла ошибка!');
-        } else {
-            alert('Код ошибки: '.response.status);
+            const sendFormBtn = document.getElementsByClassName('submit-block')[0];
+            sendFormBtn.addEventListener('click', sendForm);
         }
-    }
-}
 
-function checkEmail() {
-    // Каждый раз, когда пользователь что-то вводит,
-    // мы проверяем, являются ли поля формы валидными
-    if (email.validity.typeMismatch) {
-        showError(email);
-        return false;
-    } else if (email.validity.valueMissing) {
-        showError(email);
-        return false;
-    }
+        function onWindowScroll() {
+            overlay.style.top = window.scrollY + 'px'
+        }
 
-    return true;
-}
-
-function showError(el) {
-    // Задаём соответствующую стилизацию
-    el.classList.add('error-form');
-}
-
-async function popUp() {
-    let animationDelay = 1;
-    let upButton = document.getElementsByClassName('upper_frame_button')[0]
-    let mainButton = document.getElementsByClassName('upper_frame_main_button')[0]
-
-    let popUp = document.createElement('div')
-    let overlay = document.createElement('div')
-    let blackout = document.createElement('div');
-    blackout.classList.add('blackout');
-
-    upButton.addEventListener('click', onButtonClick)
-    mainButton.addEventListener('click', onButtonClick)
-    blackout.addEventListener('click', popupClose)
-    window.addEventListener('scroll', onWindowScroll)
-    overlay.classList.add('overlay')
-    overlay.appendChild(blackout)
-    overlay.appendChild(createPopup())
-
-    document.addEventListener('keydown', function (event) {
-        if (event.code === 'Escape')
-            popupClose()
-    });
-
-    function onButtonClick() {
-        document.body.appendChild(overlay)
-        setTimeout(() => {
-            popUp.classList.add('popUpShow')
-            blackout.classList.add('blackoutShow')
-        }, animationDelay)
-        const cross = document.getElementsByClassName('form-crossbar__image')[0];
-        cross.addEventListener('click', popupClose)
-    }
-
-    function onWindowScroll() {
-        overlay.style.top = window.scrollY + 'px'
-    }
-
-    function createPopup() {
-        popUp.classList.add('popUp');
-        popUp.innerHTML =
-            `<div class="form-wrap">
+        function createPopup() {
+            popUp.classList.add('popUp');
+            popUp.innerHTML =
+                `<div class="form-wrap">
             <div class="form-crossbar">
                 <img src="images/form-exit.png" alt="exit" class="form-crossbar__image"/>
             </div>
             <img class="image-welcome" src="images/welcome.png" alt="welcome">
             <h2 class="form-text">Записаться на курс</h2>
-            <form class="form-section" method="POST">
+            <form class="form-section" method="POST" action="">
                 <label>
                     <input class="input-wrap" type="text" name="name" id="ajax-form_name" placeholder="Ваше имя"/>
                 </label>
                 <label>
                     <input class="input-wrap" type="text" name="email" id="ajax-form_email" placeholder="Email"/>
                 </label>
-                    <select name="%activity%" class="input-wrap">
+                    <select name="%activity%" class="input-wrap" id="ajax-form-activity">
                         <option selected disabled>Деятельность</option>
                         <option value="programmer">Программист</option>
                         <option value="designer">Дизайнер</option>
@@ -126,10 +76,25 @@ async function popUp() {
                 </p>
             </form>
         </div>`;
-        return popUp
+            return popUp
+        }
+
+        function popupClose() {
+            const overlay = document.getElementsByClassName('overlay')[0]
+            setTimeout(() => {
+                document.body.removeChild(overlay)
+            }, 220)
+            popUp.classList.remove('popUpShow')
+            blackout.classList.remove('blackoutShow')
+        }
     }
 
-    function popupClose() {
+    popUp();
+
+    let blackout = document.createElement('div');
+    blackout.classList.add('blackout');
+
+    async function popupClose() {
         const overlay = document.getElementsByClassName('overlay')[0]
         setTimeout(() => {
             document.body.removeChild(overlay)
@@ -137,5 +102,60 @@ async function popUp() {
         popUp.classList.remove('popUpShow')
         blackout.classList.remove('blackoutShow')
     }
+
+    async function sendForm(e) {
+        e.preventDefault(); //предотвращаем перезагрузку страницы
+
+        const email = document.getElementById('ajax-form_email');
+        const name = document.getElementById('ajax-form_name');
+        const activity = document.getElementById('ajax-form-activity');
+
+
+        if (checkEmail(email)) { //пример проверки email
+
+            let data = JSON.stringify({
+                name: name.value,
+                email: email.value,
+                activity: activity.value,
+            });
+
+            const response = await fetch('../php/action_ajax_form.php', {
+                method: 'POST', //мы отправляем данные на сервер, значит POST
+                body: data, // отправляем ранее созданный json объект data
+                headers: {
+                    'Content-Type': 'application/json' //отправляем заголовки запроса
+                }
+            });
+
+            let content = await response.json();
+
+            if (!response.ok) {
+                alert(`An error has occurred: ${response.status}`);
+                console.log(content);
+            } else {
+                alert(`An error has occurred: ${response.status}`);
+                console.log(content);
+                await popupClose();
+            }
+        }
+    }
+
+    function checkEmail(email) {
+        // Каждый раз, когда пользователь что-то вводит,
+        if ((email.validity.typeMismatch) || (email.validity.valueMissing)) {
+            email.setCustomValidity("I am expecting an e-mail address!");
+            showError(email);
+            return false;
+        }
+
+        email.setCustomValidity("");
+        return true;
+    }
+
+    function showError(el) {
+        // Задаём соответствующую стилизацию
+        el.classList.add('error-form');
+    }
 }
+
 
